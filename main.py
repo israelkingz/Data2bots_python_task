@@ -53,10 +53,6 @@ def generate_schema(file_name):
 
     with open(f"schemas/{file_name}_output.json", "w") as output:
         json.dump(new_data, output, indent=4)
-def addition (a,b):
-    result = a + b 
-    return result 
-
 
 if __name__ == "__main__":
     for file in os.listdir(path = "data"):
